@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalita morden school</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-icon">
+                <h2>L.M.P.School</h2>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="nav-link">
+                <a href="#home"><button class="nav-button">Home</button></a>
+                <a href="#about"><button class="nav-button">About</button></a>
+                <a href="#features"><button class="nav-button">Features</button></a>
+                <a href="#contact"><button class="nav-button">Contact us</button></a>
+            </div>
+            <div class="btn-box">
+                <button class="logout">Login</button>
+                <button class="logout">Signup</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="left">
+                    <h1 class="mainheading">Welcome to our School website</h1>
+                    <p class="mainpara">Welcome to L.M.P.School, where education meets excellence! Our dedicated faculty and vibrant student community create a nurturing environment, we are committed to providing a well-rounded education that prepares our students for the future. Join us in a journey of discovery and success at L.M.P.School!</p>
+                    <a href="#contact"><button class="contact-btn logout">Contact Us</button></a>    
+                </div>
+                <div class="right">
+                    <img src="Webinar (1).gif" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container-second">
+                <h1>About Our School</h1>
+                <p>Welcome to <span>Lalita Morden Pulic School</span>, where we foster a love for learning and nurture the growth of every student. Our mission is to provide a well-rounded education that prepares students for success in a rapidly changing world.</p>
+                <p>At <span>Lalita Morden Pulic School</span>, we believe in the potential of every child. Our dedicated teachers and staff work tirelessly to create a safe, inclusive, and stimulating environment where students can explore their interests, develop their talents, and achieve their full potential.</p>
+                <p>With a rich history of academic excellence and a commitment to innovation, <span>Lalita Morden Pulic School</span> offers a curriculum that balances academic rigor with opportunities for creative expression, physical activity, and social development.</p>
+                <p>We invite you to learn more about our programs, our values, and our community. Thank you for choosing <span>Lalita Morden Pulic School</span> as your partner in education.</p>
+            </div>
+        </section>
+        <section id="features" class="features-section">
+            <div class="container-third">
+                <h2>Our Features</h2>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Experienced Faculty">
+                        <h3>Experienced Faculty</h3>
+                        <p>Our teachers are highly qualified, passionate, and dedicated to helping each student succeed.</p>
+                    </div>
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Modern Facilities">
+                        <h3>Modern Facilities</h3>
+                        <p>We offer state-of-the-art classrooms, science labs, and sports facilities to enhance the learning experience.</p>
+                    </div>
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Diverse Curriculum">
+                        <h3>Diverse Curriculum</h3>
+                        <p>Our curriculum is designed to provide a comprehensive education that balances academics with arts, sports, and extracurricular activities.</p>
+                    </div>
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Community Engagement">
+                        <h3>Community Engagement</h3>
+                        <p>We actively involve students in community service, helping them develop a sense of responsibility and leadership.</p>
+                    </div>
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Community Engagement">
+                        <h3>Community Engagement</h3>
+                        <p>We actively involve students in community service, helping them develop a sense of responsibility and leadership.</p>
+                    </div>
+                    <div class="feature-box">
+                        <img src="Webinar (1).gif" alt="Community Engagement">
+                        <h3>Community Engagement</h3>
+                        <p>We actively involve students in community service, helping them develop a sense of responsibility and leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="container-forth">
+                <h2>Contact Us</h2>
+                <form class="contact-form" action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    // Select the menu icon and navbar
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+
+// Add a click event listener to the menu icon
+menuIcon.addEventListener('click', () => {
+    // Toggle the 'open' class on the navbar
+    navbar.classList.toggle('open');
+});
+
+</script>
+
+</html>
